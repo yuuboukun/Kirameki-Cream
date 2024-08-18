@@ -1,49 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>肌のうるおい、煌めく Kirameki Cream | Kira-meki</title>
-    <meta name="description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>肌のうるおい、煌めく Kirameki Cream | Kira-meki</title>
+        <meta name="description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
 
-    <!-- OGPメタタグ -->
-    <meta property="og:title" content="肌のうるおい、煌めく Kirameki Cream | Kira-meki">
-    <meta property="og:description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://example.com">
-    <meta property="og:site_name" content="Kira-meki">
+        <!-- OGPメタタグ -->
+        <meta property="og:title" content="肌のうるおい、煌めく Kirameki Cream | Kira-meki">
+        <meta property="og:description" content="Kirameki Creamはお肌のうるおいを美しく保ちます。">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://example.com">
+        <meta property="og:site_name" content="Kira-meki">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
-        rel="stylesheet">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Marcellus&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+            rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
-        rel="stylesheet">
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Marcellus&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap"
-        rel="stylesheet">
+        <!-- Bootstrap Icons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-    <!-- リセットCSS -->
-    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+        <!-- Swiper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="assets/style/main.css">
+    </head>
 
-    <link rel="stylesheet" href="assets/style/main.css">
-</head>
+    <body>
+        <!-- ヘッダー -->
+        <header class="header">
+            <h1 class="header__logo">
+                <a href="/">
+                    <img class="header__logo-img" src="assets/image/header_log.svg" alt="Kira-meki">
+                </a>
+            </h1>
+        </header>
 
-<body>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <!-- メイン -->
+        <main class="main">
 
-    <script src="assets/script/main.js"></script>
-</body>
+            <!-- ヒーロー -->
+            <section class="hero">
+                <div class="hero__wrap">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="assets/image/hero_pc.jpg">
+                        <img src="assets/image/hero_sp.jpg" alt="" class="hero__image">
+                    </picture>
+                    <div class="hero__body">
+                        <h2 class="hero__title">
+                            <span class="hero__title-line">Kirameki</span>
+                            <span class="hero__title-line">Cream</span>
+                        </h2>
+                        <p class="hero__text">
+                            肌のうるおい、煌めく。
+                        </p>
+                    </div>
+                    <!-- /.hero__body -->
+                </div>
+                <!-- /.hero__wrap -->
+
+            </section>
+
+            <!-- 購入する -->
+            <div class="cta container">
+                <div class="cta__title">
+                    <div class="cta__product">キラメキクリーム</div>
+                    <div class="cta__price">税込 4,000円</div>
+                </div>
+                <!-- /.cta__title -->
+                <div class="cta__wrap">
+                    <form action="/cart/" method="POST">
+                        <ul class="cta__actions">
+                            <li class="cta__actions-item">
+                                <button type="submit" name="action" value="shop" class="cta__btn cta__btn--shop">
+                                    オンラインショップへ
+                                </button>
+                            </li>
+                            <li class="cta__actions-item">
+                                <button type="submit" name="action" value="purchase" class="cta__btn cta__btn--purchase">
+                                    購入する
+                                </button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- /.cta__wrap -->
+            </div>
+            <!-- /.cta container -->
+
+            <!-- カバー -->
+            <section class="cover">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="assets/image/cover_pc.jpg">
+                    <img src="assets/image/cover_sp.jpg" alt="" class="cover__image">
+                </picture>
+                <div class="cover__content">
+                    <h2 class="cover__title">
+                        <span class="cover__main-title">Keep Your Skin Beautiful.</span>
+                        <span class="cover__sub-title">お肌を美しく保つ</span>
+                    </h2>
+                    <p class="cover__text">
+                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
+                    </p>
+                </div>
+            </section>
+
+            <!-- お客様の声 -->
+            <section class="voices">
+                <h2 class="voices__title">
+                    <span class="voices__main-title">Voices</span>
+                    <span class="voices__sub-title">お客様の声</span>
+                </h2>
+                <div class="voices__carousel">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/image/a_pc.png">
+                                    <img src="assets/image/a_sp.png" alt="" class="voices__image">
+                                </picture>
+                                <div class="voices__name">
+                                    Aさん
+                                </div>
+                                <div class="voices__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/image/b_pc.png">
+                                    <img src="assets/image/b_sp.png" alt="" class="voices__image">
+                                </picture>
+                                <div class="voices__name">
+                                    Bさん
+                                </div>
+                                <div class="voices__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/image/c_pc.png">
+                                    <img src="assets/image/c_sp.png" alt="" class="voices__image">
+                                </picture>
+                                <div class="voices__name">
+                                    Cさん
+                                </div>
+                                <div class="voices__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/image/d_pc.png">
+                                    <img src="assets/image/d_sp.png" alt="" class="voices__image">
+                                </picture>
+                                <div class="voices__name">
+                                    Dさん
+                                </div>
+                                <div class="voices__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/image/e_pc.png">
+                                    <img src="assets/image/e_sp.png" alt="" class="voices__image">
+                                </picture>
+                                <div class="voices__name">
+                                    Eさん
+                                </div>
+                                <div class="voices__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="assets/image/f_pc.png">
+                                    <img src="assets/image/f_sp.png" alt="" class="voices__image">
+                                </picture>
+                                <div class="voices__name">
+                                    Fさん
+                                </div>
+                                <div class="voices__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</div>
+                            </div>
+                        </div>
+                        <!-- /.swiper-wrapper -->
+                    </div>
+                    <!-- /.swiper -->
+
+                    <div class="my-button-prev"><img src="assets/image/arrow_left.png" alt=""></div>
+                    <div class="my-button-next"><img src="assets/image/arrow_right.png" alt=""></div>
+
+                    <div class="swiper-pagination"></div>
+                </div>
+            </section>
+
+            <!-- よくあるご質問 -->
+            <section class="faq">
+                <h2 class="faq__title">
+                    <span class="faq__main-title">Q&A</span>
+                    <span class="faq__sub-title">よくあるご質問</span>
+                </h2>
+            </section>
+
+            <!-- 購入する -->
+            <div class="cta container">
+                <div class="cta__title">
+                    <div class="cta__product">キラメキクリーム</div>
+                    <div class="cta__price">税込 4,000円</div>
+                </div>
+                <!-- /.cta__title -->
+                <div class="cta__wrap">
+                    <form action="/cart/" method="POST">
+                        <ul class="cta__actions">
+                            <li class="cta__actions-item">
+                                <button type="submit" name="action" value="shop" class="cta__btn cta__btn--shop">
+                                    オンラインショップへ
+                                </button>
+                            </li>
+                            <li class="cta__actions-item">
+                                <button type="submit" name="action" value="purchase" class="cta__btn cta__btn--purchase">
+                                    購入する
+                                </button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- /.cta__wrap -->
+            </div>
+            <!-- /.cta container -->
+
+        </main>
+
+        <footer class="footer">
+
+        </footer>
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+            integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <!-- Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script src="assets/script/main.js"></script>
+    </body>
 
 </html>
