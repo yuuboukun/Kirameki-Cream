@@ -117,6 +117,10 @@ html {
     transition: all .3s;
 }
 
+.cta__btn:hover {
+    opacity: .6;
+}
+
 @media (min-width: 768px) {
     .cta__btn {
         max-width: 300px;
@@ -201,7 +205,6 @@ html {
 ------------------------------------------ */
 .cover {
     margin-top: 50px;
-    margin-bottom: 50px;
     position: relative;
 }
 
@@ -219,7 +222,7 @@ html {
     color: #fff;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1331px) {
     .cover__content {
         width: 31.1333vw;
         left: 55.2667vw;
@@ -240,9 +243,9 @@ html {
     font-weight: bold;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1331px) {
     .cover__main-title {
-        font-size: 2.533vw;
+        font-size: 38px;
     }
 }
 
@@ -253,9 +256,9 @@ html {
     margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1331px) {
     .cover__sub-title {
-        font-size: 1.6vw;
+        font-size: 24px;
     }
 }
 
@@ -265,8 +268,154 @@ html {
     text-shadow: 0 0.1875rem 0.375rem #00000029;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1331px) {
     .cover__text {
-        font-size: 0.9333vw;
+        font-size: 14px;
     }
+}
+
+/* お客様の声
+------------------------------------------ */
+.voices__title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 36px;
+}
+
+@media (min-width: 1331px) {
+    .voices__title {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+}
+
+.voices__main-title {
+    display: block;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+}
+
+.voices__sub-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.voices__carousel {
+    position: relative;
+    width: 280px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .voices__carousel {
+        max-width: 1156px;
+        width: 77.0667vw;
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    padding: 28px 15px;
+    background-color: #DBF7F9;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .swiper-slide {
+        width: 25.9516vw;
+    }
+}
+
+.voices__name {
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+.voices__text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.my-button-prev,
+.my-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+}
+
+@media (min-width: 768px) {
+    .my-button-prev,
+    .my-button-next {
+        font-size: 48px;
+    }
+}
+
+.my-button-prev {
+    left: -39px;
+}
+
+@media (min-width: 768px) {
+    .my-button-prev {
+        left: -7.612vw;
+    }
+}
+
+.my-button-next {
+    right: -39px;
+}
+
+@media (min-width: 768px) {
+    .my-button-next {
+        right: -7.612vw;
+    }
+}
+
+.swiper-pagination {
+    position: absolute;
+    margin-bottom: -38px;
+}
+
+/* よくあるご質問
+------------------------------------------ */
+.faq {
+    background-image: linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%);
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+.faq__title {
+    text-align: center;
+}
+
+.faq__main-title {
+    display: block;
+    font-size: 30px;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+}
+
+.faq__sub-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.faq__question .bi {
+    transition: transform 0.3s ease;
+}
+
+.faq__question .bi.rotate {
+    transform: rotate(180deg);
 }
