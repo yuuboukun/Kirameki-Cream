@@ -35,3 +35,15 @@ $('.faq__question').on('click', function (e) {
     // アイコンの上下反転
     $(this).find('.bi').toggleClass('rotate');
 });
+
+// トップへ
+const toTop = document.getElementById('to_top');
+
+toTop.addEventListener('click', e => {
+    e.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
