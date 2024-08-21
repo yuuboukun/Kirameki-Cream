@@ -571,8 +571,9 @@ html {
 @media (min-width: 768px) {
     .footer__content {
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
+        max-width: 1136px;
     }
 }
 
@@ -583,7 +584,6 @@ html {
 @media (min-width: 768px) {
     .footer__logo {
         margin-bottom: 0;
-        margin-right: 13.7333vw;
     }
 }
 
@@ -606,9 +606,12 @@ html {
 
 @media (min-width: 768px) {
     .footer__link {
-        gap: 1.3333vw;
+        gap: 2.8169%;
         margin-bottom: 0;
-        margin-right: 10.3333vw;
+    }
+
+    .footer__link a {
+        white-space: nowrap;
     }
 }
 
