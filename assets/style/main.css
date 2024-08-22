@@ -36,21 +36,21 @@ html {
 
 /* 購入する */
 .cta {
-    /* margin-top: 157px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #F0F4FF;
-    padding-top: 20px;
-    padding-bottom: 34px;
+    padding-top: 1.25rem;
+    padding-bottom: 2.125rem;
 }
 
 @media (min-width: 768px) {
     .cta {
-        /* margin-top: 48px; */
         flex-direction: row;
         justify-content: space-between;
-        padding: 2.93vw 3.2vw;
+        padding: 2.375rem 3.2vw;
+        max-width: 62.5rem;
+        margin: auto;
     }
 
     .cta__actions {
@@ -64,6 +64,12 @@ html {
     text-align: center;
 }
 
+@media (min-width: 768px) {
+        .cta__title {
+            text-align: left;
+        }
+}
+
 .cta__product {
     font-size: 1.125rem;
     font-weight: 600;
@@ -73,12 +79,13 @@ html {
 
 @media (min-width: 768px) {
     .cta__product {
-        font-size: 24px;
+        font-size: 1.5rem;
+        padding-bottom: 8px;
     }
 }
 
 .cta__btn--shop {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 @media (min-width: 768px) {
@@ -96,7 +103,7 @@ html {
 @media (min-width: 768px) {
     .cta__price {
         padding-bottom: 0;
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -121,11 +128,11 @@ html {
 
 @media (min-width: 768px) {
     .cta__btn {
-        max-width: 300px;
-        max-height: 58px;
+        max-width: 18.75rem;
+        max-height: 3.625rem;
         width: 28vw;
         height: 5.6vw;
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 }
 
@@ -147,7 +154,7 @@ html {
 @media (min-width: 768px) {
     .header {
         width: 10.375rem;
-        top: 2.1333vw;
+        top: 1.375rem;
     }
 }
 
@@ -155,19 +162,25 @@ html {
 ------------------------------------------ */
 .hero__wrap {
 	position: relative;
-    margin-bottom: 157px;
+    margin-bottom: 9.8125rem;
 }
 
 @media (min-width: 768px) {
     .hero__wrap {
-        margin-bottom: 48px;
+        margin-bottom: 3rem;
     }
 }
 
 .hero__wrap img {
     width: 100%;
-    height: 450px;
+    height: 28.125rem;
     object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .hero__wrap img {
+        height: 45rem;
+    }
 }
 
 .hero__body {
@@ -191,6 +204,13 @@ html {
     letter-spacing: .3em;
 }
 
+@media (min-width: 768px) {
+    .hero__title {
+    font-size: 3.125rem;
+    line-height: 1.36;
+    }
+}
+
 .hero__title-line {
     display: block;
 }
@@ -199,6 +219,14 @@ html {
     font-size: 1.25rem;
     margin-top: 0.5625rem;
     letter-spacing: 0.375rem;
+}
+
+@media (min-width: 768px) {
+    .hero__text {
+        font-size: 1.5625rem;
+        margin-top: 0.3125rem;
+        letter-spacing: 0.4688rem;
+    }
 }
 
 /* カバー
@@ -214,6 +242,13 @@ html {
     object-fit: cover;
 }
 
+
+@media (min-width: 768px) {
+    .cover img {
+        height: 550px;
+    }
+}
+
 .cover__content {
     position: absolute;
     width: 91.7949vw;
@@ -225,16 +260,22 @@ html {
 
 @media (min-width: 768px) {
     .cover__content {
-        width: 31.1333vw;
-        right: 16.1333vw;
-        transform: none;
+        width: 467px;
         top: 50%;
         transform: translateY(-50%);
+        margin-left: auto;
+        right: 204px;
     }
 }
 
 .cover__title {
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .cover__title {
+        text-align: left;
+    }
 }
 
 .cover__main-title {
@@ -247,6 +288,7 @@ html {
 @media (min-width: 768px) {
     .cover__main-title {
         font-size: 38px;
+        margin-top: 7px;
     }
 }
 
@@ -261,6 +303,7 @@ html {
 @media (min-width: 768px) {
     .cover__sub-title {
         font-size: 24px;
+        margin-bottom: 18px;
     }
 }
 
@@ -273,6 +316,7 @@ html {
 @media (min-width: 768px) {
     .cover__text {
         font-size: 14px;
+        width: 418px;
     }
 }
 
@@ -316,6 +360,7 @@ html {
 @media (min-width: 768px) {
     .voices__sub-title {
         font-size: 20px;
+        margin-top: 8px;
     }
 }
 
@@ -330,13 +375,21 @@ html {
 @media (min-width: 768px) {
     .voices__carousel {
         max-width: 1156px;
-        width: 77.0667vw;
+        width: 100%;
+        height: 388px;
     }
 }
 
 .swiper {
     width: 100%;
     height: 100%;
+}
+
+
+@media (min-width: 768px) {
+    .swiper {
+        max-width: 980px;
+    }
 }
 
 .swiper-slide {
@@ -349,12 +402,20 @@ html {
 
 @media (min-width: 768px) {
     .swiper-slide {
-        width: 25.9516vw;
+        /* width: 20vw; */
+        max-width: 300px;
     }
 }
 
 .voices__image {
     padding-left: 0.5625rem;
+}
+
+@media (min-width: 768px) {
+    .voices__image {
+        padding-left: 0;
+        padding-top: 12px;
+    }
 }
 
 .voices__name {
@@ -363,10 +424,25 @@ html {
     font-size: 0.875rem;
 }
 
+@media (min-width: 768px) {
+    .voices__name {
+        letter-spacing: 2px;
+        margin-bottom: 13px;
+    }
+}
+
 .voices__text {
     text-align: left;
     font-size: 0.875rem;
     line-height: 2;
+}
+
+@media (min-width: 768px) {
+    .voices__text {
+        font-size: 16px;
+        line-height: 1.75;
+        padding-right: 1px;
+    }
 }
 
 .my-button-prev,
@@ -380,7 +456,14 @@ html {
 @media (min-width: 768px) {
     .my-button-prev,
     .my-button-next {
-        font-size: 48px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .my-button-prev img,
+    .my-button-next img {
+        width: 100%;
+        height: 100%;
     }
 }
 
