@@ -330,8 +330,8 @@ html {
 
 @media (min-width: 768px) {
     .voices__title {
-        margin-top: 80px;
-        margin-bottom: 40px;
+        margin-top: 5rem;
+        margin-bottom: 2.5rem;
     }
 }
 
@@ -345,7 +345,7 @@ html {
 
 @media (min-width: 768px) {
     .voices__main-title {
-        font-size: 45px;
+        font-size: 2.8125rem;
     }
 }
 
@@ -359,8 +359,8 @@ html {
 
 @media (min-width: 768px) {
     .voices__sub-title {
-        font-size: 20px;
-        margin-top: 8px;
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
     }
 }
 
@@ -374,9 +374,9 @@ html {
 
 @media (min-width: 768px) {
     .voices__carousel {
-        max-width: 1156px;
+        max-width: 72.25rem;
         width: 100%;
-        height: 388px;
+        height: 24.25rem;
     }
 }
 
@@ -388,7 +388,8 @@ html {
 
 @media (min-width: 768px) {
     .swiper {
-        max-width: 980px;
+        max-width: 61.25rem;
+        width: 84.7751vw;
     }
 }
 
@@ -402,8 +403,7 @@ html {
 
 @media (min-width: 768px) {
     .swiper-slide {
-        /* width: 20vw; */
-        max-width: 300px;
+        max-width: 18.75rem;
     }
 }
 
@@ -414,7 +414,7 @@ html {
 @media (min-width: 768px) {
     .voices__image {
         padding-left: 0;
-        padding-top: 12px;
+        padding-top: 0.75rem;
     }
 }
 
@@ -426,8 +426,8 @@ html {
 
 @media (min-width: 768px) {
     .voices__name {
-        letter-spacing: 2px;
-        margin-bottom: 13px;
+        letter-spacing: 0.125rem;
+        margin-bottom: 0.8125rem;
     }
 }
 
@@ -439,9 +439,9 @@ html {
 
 @media (min-width: 768px) {
     .voices__text {
-        font-size: 16px;
+        font-size: 1rem;
         line-height: 1.75;
-        padding-right: 1px;
+        padding-right: 0.0625rem;
     }
 }
 
@@ -456,8 +456,8 @@ html {
 @media (min-width: 768px) {
     .my-button-prev,
     .my-button-next {
-        width: 48px;
-        height: 48px;
+        width: 3rem;
+        height: 3rem;
     }
 
     .my-button-prev img,
@@ -473,7 +473,8 @@ html {
 
 @media (min-width: 768px) {
     .my-button-prev {
-        left: -7.612vw;
+        left: 0.0625rem;
+        top: 50%;
     }
 }
 
@@ -483,13 +484,20 @@ html {
 
 @media (min-width: 768px) {
     .my-button-next {
-        right: -7.612vw;
+        right: 0.0625rem;
+        top: 50%;
     }
 }
 
 .swiper-pagination {
     position: absolute;
     margin-bottom: -2.375rem;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        margin-bottom: -2.8125rem;
+    }
 }
 
 .swiper-pagination-bullet {
@@ -500,40 +508,41 @@ html {
 ------------------------------------------ */
 .faq {
     background-image: linear-gradient(90deg, #F4FFE8 0%, #C6F0FE 100%);
-    margin-top: 75px;
-    margin-bottom: 50px;
-    padding-bottom: 13px;
+    margin-top: 4.6875rem;
+    margin-bottom: 3.125rem;
+    padding-bottom: 0.8125rem;
 }
 
 @media (min-width: 768px) {
     .faq {
-        padding-bottom: 40px;
+        margin-top: 7.0625rem;
+        padding-bottom: 1.125rem;
     }
 }
 
 .faq__title {
     text-align: center;
-    padding-top: 32px;
-    padding-bottom: 37px;
+    padding-top: 2rem;
+    padding-bottom: 2.3125rem;
 }
 
 @media (min-width: 768px) {
     .faq__title {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
     }
 }
 
 .faq__main-title {
     display: block;
-    font-size: 32px;
+    font-size: 2rem;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
 }
 
 @media (min-width: 768px) {
     .faq__main-title {
-        font-size: 45px;
+        font-size: 2.8125rem;
     }
 }
 
@@ -546,7 +555,9 @@ html {
 
 @media (min-width: 768px) {
     .faq__sub-title {
-        font-size: 20px;
+        font-size: 1.25rem;
+        margin-top: 0.4375rem;
+        letter-spacing: 0.0625rem;
     }
 }
 
@@ -558,25 +569,38 @@ html {
 
 .faq__item {
     background-color: #fff;
-    margin-bottom: 19px;
+    margin-bottom: 1.1875rem;
+}
+
+@media (min-width: 768px) {
+    .faq__item {
+        margin-bottom: 1.25rem;
+    }
 }
 
 .faq__question {
     display: flex;
     align-items: flex-start;
-    padding: 16px 1rem 18px;
+    padding: 1rem 1rem 1.125rem;
 }
 
 @media (min-width: 768px) {
     .faq__question {
-        padding: 26px 24px 24px;
+        padding: 1.4375rem 1.5rem 1.5rem;
     }
 }
 
 .faq__question .bi {
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
     transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+    .faq__question .bi {
+        margin-left: auto;
+        margin-top: 0.3125rem;
+    }
 }
 
 .faq__question .bi.rotate {
@@ -585,19 +609,19 @@ html {
 
 .faq__answer {
     display: flex;
-    padding: 0 17px 23px 16px;
+    padding: 0 1.0625rem 1.4375rem 1rem;
     display: none;
 }
 
 @media (min-width: 768px) {
     .faq__answer {
-        padding: 0 24px 24px;
+        padding: 0 1.5rem 1rem;
     }
 }
 
 .faq__answer-inner {
     display: flex;
-    transform: translateY(-6px);
+    transform: translateY(-0.375rem);
 }
 
 .faq-q,
@@ -612,15 +636,23 @@ html {
 @media (min-width: 768px) {
     .faq-q,
     .faq-a {
-        font-size: 18px;
+        font-size: 1.125rem;
+        margin-top: 0;
     }
 }
 
 .faq__question-text,
 .faq__content {
     font-weight: 500; /* Medium */
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.8667;
+}
+
+@media (min-width: 768px) {
+    .faq__question-text,
+    .faq__content {
+        padding-left: 0.3125rem;
+    }
 }
 
 /* フッター
@@ -632,6 +664,13 @@ html {
     text-align: center;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 104px;
+        padding: 0;
+    }
 }
 
 .footer__to-top {
@@ -646,6 +685,12 @@ html {
     align-items: center;
 }
 
+@media (min-width: 768px) {
+    .footer__to-top {
+        right: 150px;
+    }
+}
+
 .footer__to-top .bi {
     color: #fff;
     font-size: 28px;
@@ -657,6 +702,9 @@ html {
         justify-content: space-between;
         align-items: center;
         max-width: 1136px;
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
 }
 
@@ -689,8 +737,9 @@ html {
 
 @media (min-width: 768px) {
     .footer__link {
-        gap: 2.8169%;
-        margin-bottom: 0;
+        gap: 2.1333vw;
+        margin-bottom: 3px;
+        margin-left: 3.4vw;
     }
 
     .footer__link a {
@@ -709,7 +758,14 @@ html {
     }
 }
 
-.footer-copyright {
+.footer__copyright {
     color: #fff;
     font-size: 11px;
+}
+
+@media (min-width: 768px) {
+    .footer__copyright {
+        font-size: 12px;
+        white-space: nowrap;
+    }
 }
