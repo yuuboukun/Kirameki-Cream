@@ -192,7 +192,7 @@ html {
 @media (min-width: 768px) {
     .hero__body {
         left: 14.8667vw;
-        top: 50%;
+        top: 49.9%;
         transform: translateY(-50%);
     }
 }
@@ -217,14 +217,14 @@ html {
 
 .hero__text {
     font-size: 1.25rem;
-    margin-top: 0.5625rem;
+    margin-top: 0.5rem;
     letter-spacing: 0.375rem;
 }
 
 @media (min-width: 768px) {
     .hero__text {
         font-size: 1.5625rem;
-        margin-top: 0.3125rem;
+        margin-top: 0.4375rem;
         letter-spacing: 0.4688rem;
     }
 }
