@@ -418,6 +418,15 @@ html {
     }
 }
 
+@media (max-width: 767px) {
+    .voices__image--g {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        padding: 0;
+    }
+}
+
 .voices__name {
     margin-top: 0.5rem;
     margin-bottom: 1rem;

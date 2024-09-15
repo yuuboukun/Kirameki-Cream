@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper', {
         // 768px以上の設定
         768: {
             slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerGroup: 1,
             spaceBetween: 40,
         },
     },
